@@ -1,0 +1,100 @@
+/*
+Colors used:
+Primary Colours (Eerie Black): #191919 rgb(25,25,25); #212121 rgb(33,33,33);
+Secondary Colours, Typography (Silver Chalice): #A8A8A8 rgb(168,168,168); (White): #FFFFFF rgb(255,255,255);
+Accent Colour, (Turquoise Blue): #5CFFF4 rgb(92,255,244);
+*/
+
+body {
+  background-color: #212121;
+  font-family: 'noto', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #A8A8A8;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.44em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 1.95em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+h3 {
+  font-size: 1.56em;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+h4 {
+  font-size: 1.25em;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+img {
+  width: 100%;
+}
+a {
+  color: #5CFFF4;
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #00A398;
+}
+a:hover,
+a:focus
+ {
+  color: #A8A8A8;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #FFFFFF;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #5CFFF4;
+  color: #212121; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #FFFFFF; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:visited { /* visited button */
+  color: #212121;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button:active { /* selected button */
+  background-color: #FFFFFF;
+}
+.button.secondary {
+  background-color: transparent;
+  color: #5CFFF4;
+  text-transform: uppercase;
+  border: 2px solid #5CFFF4;
+}
+.button.secondary:visited {
+  background-color: transparent;
+  color: #5CFFF4;
+  text-transform: uppercase;
+  border: 2px solid #5CFFF4;
+}
+.button.secondary:hover {
+  background-color: #5CFFF4;
+  color: #212121;
+  opacity: 1.0;
+}
+.button.secondary:active { /* selected button */
+  background-color: #FFFFFF;
+}
