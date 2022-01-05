@@ -4,19 +4,26 @@ Primary Colours (Eerie Black): #191919 rgb(25,25,25); #212121 rgb(33,33,33);
 Secondary Colours, Typography (Silver Chalice): #A8A8A8 rgb(168,168,168); (White): #FFFFFF rgb(255,255,255);
 Accent Colour, (Turquoise Blue): #5CFFF4 rgb(92,255,244);
 */
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #212121;
   font-family: 'noto', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 400;
+  /* Sets the font weight to 400 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #A8A8A8;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.44em;
   font-weight: 700;
@@ -34,67 +41,183 @@ h3 {
   font-weight: 400;
   color: #FFFFFF;
 }
+
 h4 {
   font-size: 1.25em;
   font-weight: 400;
   color: #FFFFFF;
 }
+
 img {
   width: 100%;
 }
+
 a {
   color: #5CFFF4;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
-  color: #00A398;
+
+a:visited {
+  /* visited link */
+  color: #5CFFF4;
 }
+
 a:hover,
-a:focus
- {
+a:focus {
   color: #A8A8A8;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #FFFFFF;
 }
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #5CFFF4;
-  color: #212121; /* needed to override the default link color */
+  color: #212121;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #FFFFFF; /* width of the border, type, color */
+  border-bottom: 2px solid #FFFFFF;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
-.button:visited { /* visited button */
+
+.button:visited {
+  /* visited button */
   color: #212121;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-.button:active { /* selected button */
+
+.button:active {
+  /* selected button */
   background-color: #FFFFFF;
 }
+
 .button.secondary {
   background-color: transparent;
   color: #5CFFF4;
   text-transform: uppercase;
   border: 2px solid #5CFFF4;
 }
+
 .button.secondary:visited {
   background-color: transparent;
   color: #5CFFF4;
   text-transform: uppercase;
   border: 2px solid #5CFFF4;
 }
+
 .button.secondary:hover {
   background-color: #5CFFF4;
   color: #212121;
   opacity: 1.0;
 }
-.button.secondary:active { /* selected button */
+
+.button.secondary:active {
+  /* selected button */
   background-color: #FFFFFF;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #A8A8A8;
+}
+
+h2 {
+  text-align: center;
+  /* Centers text */
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+  text-transform: uppercase;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+header {
+  background-color: #191919;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+  position: fixed;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+#hero {
+  background-color: #191919;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 132.78px;
+}
+
+footer {
+  background-color: #191919;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+contact>ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%
+}
+
+contact>ul>li {
+  display: inline-block;
+}
+
+contact>ul>li>a {
+  padding: 0 15px;
 }
