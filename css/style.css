@@ -156,11 +156,27 @@ h2 {
 }
 
 .logo {
-  max-width: 250px;
   text-transform: uppercase;
   font-size: 1.15em;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #5CFFF4;
+}
+
+.logo:visited {
+  /* visited link */
+  color: #5CFFF4;
+}
+
+.logo:hover,
+.logo:focus {
+  color: #FFFFFF;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+.logo:active {
+  /* selected link */
+  color: #FFFFFF;
 }
 
 header {
@@ -169,6 +185,7 @@ header {
   padding: 10px 0;
   box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
   position: fixed;
+  width: 100%
 }
 
 nav>ul {
@@ -186,7 +203,25 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #5CFFF4;
+  text-decoration: none;
+}
+
+nav>ul>li>a:visited {
+  /* visited link */
+  color: #5CFFF4;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+  color: #FFFFFF;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+nav>ul>li>a:active {
+  /* selected link */
+  color: #FFFFFF;
 }
 
 #hero {
@@ -203,21 +238,36 @@ main {
 footer {
   background-color: #191919;
   padding: 20px 0;
+  text-align: center;
   display: inline-block;
   width: 100%;
 }
 
-contact>ul {
+.social svg {
+  width: 48px;
+}
+
+.social>ul {
   list-style-type: none;
+  text-align: center;
   padding: 0;
   display: inline-block;
   width: 100%
 }
 
-contact>ul>li {
+.social>ul>li {
   display: inline-block;
 }
 
-contact>ul>li>a {
+.social>ul>li>a {
   padding: 0 15px;
+}
+
+picture.profile-img {
+  display: block;
+  text-align: center;
+}
+
+.profile-img img {
+  max-width: 200px;
 }
