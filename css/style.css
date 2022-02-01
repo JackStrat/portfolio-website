@@ -82,7 +82,7 @@ a:active {
   color: #212121;
   /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
+  padding: 10px 40px;
   border-radius: 3px;
   border-bottom: 2px solid #FFFFFF;
   /* width of the border, type, color */
@@ -150,27 +150,26 @@ h2 {
   /* Centers text */
 }
 
-#hero h1 {
+#hero {
   text-align: center;
   /* Centers text */
 }
 
 .logo {
-  text-transform: uppercase;
-  font-size: 1.15em;
-  font-weight: 700;
-  color: #5CFFF4;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.95em;
+  font-weight: 400;
+  color: #FFFFFF;
 }
 
 .logo:visited {
   /* visited link */
-  color: #5CFFF4;
+  color: #FFFFFF;
 }
 
 .logo:hover,
 .logo:focus {
-  color: #FFFFFF;
-  text-decoration: none;
+  opacity: 70% text-decoration: none;
   /* Underlining when hovering over a link */
 }
 
@@ -188,9 +187,14 @@ header {
   width: 100%
 }
 
+nav {
+  margin-top: 0.5em;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   display: inline-block;
   width: 100%
 }
@@ -206,6 +210,7 @@ nav>ul>li>a {
   font-weight: 700;
   color: #5CFFF4;
   text-decoration: none;
+  font-size: 95%
 }
 
 nav>ul>li>a:visited {
@@ -217,13 +222,15 @@ nav>ul>li>a:hover,
 nav>ul>li>a:focus {
   color: #FFFFFF;
   text-decoration: none;
-  border-bottom: 2px solid #FFFFFF;
 }
 
 nav>ul>li>a:active {
   /* selected link */
   color: #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
+}
+
+.active {
+  color: #FFFFFF
 }
 
 #hero {
@@ -234,11 +241,14 @@ nav>ul>li>a:active {
 }
 
 #hero span {
-  font-size: 0.80em;
+  font-size: 0.70em;
+  display: block;
+  font-weight: 400;
+  margin-top: 1em
 }
 
 main {
-  padding-top: 132.78px;
+  padding-top: 103px;
 }
 
 footer {
@@ -278,6 +288,13 @@ picture.profile-img {
   max-width: 200px;
 }
 
+iframe {
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+  min-height: 625px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -294,7 +311,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 99px;
+    padding-top: 82px;
   }
 
   body {
@@ -322,6 +339,29 @@ Medium devices (640px and larger)
 
   #about h3 {
     margin-top: 0;
+  }
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 0;
+  }
+
+  nav>ul {
+    margin: 0;
+  }
+
+  .text-block {
+    max-width: 700px;
+    margin: 4em auto;
+  }
+  #hero .container {
+    max-width: 700px;
+    margin: 4em auto;
   }
 }
 
@@ -391,32 +431,32 @@ X-large devices (1440px or larger)
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-.topBotomBordersIn a:before, .topBotomBordersIn a:after
-{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
+nav ul a {
+  position: relative;
 }
 
-.topBotomBordersIn a:before
-{
-    top: 0px;
-    transform: translateY(-10px);
+.topBotomBordersIn a:before, .topBotomBordersIn a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
 }
 
-.topBotomBordersIn a:after
-{
-    bottom: 0px;
-    transform: translateY(10px);
+.topBotomBordersIn a:before {
+  top: 0px;
+  transform: translateY(-10px);
 }
 
-.topBotomBordersIn a:hover:before, .topBotomBordersIn a:hover:after
-{
-    opacity: 1;
-    transform: translateY(0px);
+.topBotomBordersIn a:after {
+  bottom: 0px;
+  transform: translateY(10px);
+}
+
+.topBotomBordersIn a:hover:before, .topBotomBordersIn a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
 }
