@@ -18,19 +18,23 @@
   <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <script src="https://kit.fontawesome.com/8ba5d7af93.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
-      <a class="logo" href="index.html">Jack Strat UI / UX</a>
-      <nav>
-        <ul class="topBotomBordersIn">
-          <li><a href="index.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a class="logo" href="index.html">Jack Strat UI / UX</a>
+        <nav>
+          <ul class="topBotomBordersIn">
+            <li><a class="active" href="index.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -293,6 +297,7 @@
   </footer>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 
 </html>
