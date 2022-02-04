@@ -83,7 +83,7 @@ a:active {
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px 40px;
-  border-radius: 3px;
+  border-radius: 18px;
   border-bottom: 2px solid #FFFFFF;
   /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -142,7 +142,7 @@ a:active {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #A8A8A8;
+  border-bottom: 2px solid #A8A8A8;
 }
 
 h2 {
@@ -256,6 +256,18 @@ nav>ul>li>a:active {
   color: #FFFFFF
 }
 
+#about-hero {
+  text-align: center;
+  /* Centers text */
+}
+
+#about-hero {
+  background-color: #191919;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+
 #hero {
   background-color: #191919;
   padding: 20px 0;
@@ -308,7 +320,7 @@ picture.profile-img {
 }
 
 .profile-img img {
-  max-width: 200px;
+  max-width: 140px;
 }
 
 iframe {
@@ -334,7 +346,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 82px;
+    padding-top: 116px;
   }
 
   body {
@@ -364,6 +376,10 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
+  #work h3 {
+    margin-top: 0;
+  }
+
   header .navtoggle {
     display: flex;
     justify-content: space-between;
@@ -380,6 +396,15 @@ Medium devices (640px and larger)
 
   nav>ul>li {
     display: inline-block;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0;
+    border-top: 0;
   }
 
   .navtoggle li:not(:last-child) {
@@ -400,9 +425,15 @@ Medium devices (640px and larger)
     margin: 4em auto;
   }
 
+  #about-hero .container {
+    max-width: 700px;
+    margin: 1em auto;
+  }
+
   .logo {
     font-size: 1.95em;
   }
+
   nav ul a {
     position: relative;
   }
@@ -431,6 +462,10 @@ Medium devices (640px and larger)
   .topBotomBordersIn a:hover:before, .topBotomBordersIn a:hover:after {
     opacity: 1;
     transform: translateY(0px);
+  }
+
+  .profile-img img {
+    max-width: 200px;
   }
 }
 
