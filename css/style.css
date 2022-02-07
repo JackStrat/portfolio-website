@@ -140,6 +140,10 @@ a:active {
   /* 25px top and bottom, 0 left and right */
 }
 
+#work {
+  scroll-margin-top: 84px;
+}
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 2px solid #A8A8A8;
@@ -374,6 +378,10 @@ Medium devices (640px and larger)
 
   #about h3 {
     margin-top: 0;
+  }
+
+  #work {
+    scroll-margin-top: 146px;
   }
 
   #work h3 {
