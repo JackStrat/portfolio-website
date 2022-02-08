@@ -1,8 +1,8 @@
 /*
 Colors used:
 Primary Colours (Eerie Black): #191919 rgb(25,25,25); #212121 rgb(33,33,33);
-Secondary Colours, Typography (Silver Chalice): #A8A8A8 rgb(168,168,168); (White): #FFFFFF rgb(255,255,255);
-Accent Colour, (Turquoise Blue): #5CFFF4 rgb(92,255,244);
+Secondary Colours, Typography (Silver Chalice): #a8a8a8 rgb(168,168,168); (White): #fff rgb(255,255,255);
+Accent Colour, (Turquoise Blue): #5cfff4 rgb(92,255,244);
 */
 * {
   box-sizing: border-box;
@@ -12,40 +12,40 @@ body {
   background-color: #212121;
   font-family: 'noto', sans-serif;
   font-size: 16px;
-  /* Sets the font size to 16px */
   font-weight: 400;
-  /* Sets the font weight to 400 */
   line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: #A8A8A8;
+  color: #a8a8a8;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
 h1 {
   font-size: 2.35em;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 h2 {
   font-size: 1.95em;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 h3 {
   font-size: 1.56em;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 h4 {
   font-size: 1.25em;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 img {
@@ -53,39 +53,34 @@ img {
 }
 
 a {
-  color: #5CFFF4;
+  color: #5cfff4;
   text-decoration: none;
-  /* No underlining */
 }
 
 a:visited {
   /* visited link */
-  color: #5CFFF4;
+  color: #5cfff4;
 }
 
 a:hover,
 a:focus {
-  color: #A8A8A8;
+  color: #a8a8a8;
   text-decoration: none;
-  /* Underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #5CFFF4;
+  background-color: #5cfff4;
   color: #212121;
-  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px 40px;
   border-radius: 18px;
-  border-bottom: 2px solid #FFFFFF;
-  /* width of the border, type, color */
+  border-bottom: 2px solid #fff;
   transition: 0.2s opacity;
 }
 
@@ -96,38 +91,35 @@ a:active {
 
 .button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .button:active {
-  /* selected button */
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 .button.secondary {
   background-color: transparent;
-  color: #5CFFF4;
+  color: #5cfff4;
   text-transform: uppercase;
-  border: 2px solid #5CFFF4;
+  border: 2px solid #5cfff4;
 }
 
 .button.secondary:visited {
   background-color: transparent;
-  color: #5CFFF4;
+  color: #5cfff4;
   text-transform: uppercase;
-  border: 2px solid #5CFFF4;
+  border: 2px solid #5cfff4;
 }
 
 .button.secondary:hover {
-  background-color: #5CFFF4;
+  background-color: #5cfff4;
   color: #212121;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .button.secondary:active {
-  /* selected button */
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 /* Layout styling */
@@ -137,7 +129,6 @@ a:active {
 
 .row {
   margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
 }
 
 #work {
@@ -146,40 +137,37 @@ a:active {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 2px solid #A8A8A8;
+  border-bottom: 2px solid #a8a8a8;
 }
 
 h2 {
   text-align: center;
-  /* Centers text */
 }
 
 #hero {
   text-align: center;
-  /* Centers text */
 }
 
 .logo {
   font-family: 'Bebas Neue', cursive;
   font-size: 1.63em;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .logo:visited {
   /* visited link */
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .logo:hover,
 .logo:focus {
-  opacity: 70% text-decoration: none;
-  /* Underlining when hovering over a link */
+  opacity: 70%;
+  text-decoration: none;
 }
 
 .logo:active {
-  /* selected link */
-  color: #FFFFFF;
+  color: #fff;
 }
 
 header {
@@ -187,14 +175,14 @@ header {
   padding: 10px 0 4px;
   box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
   position: fixed;
-  width: 100%
+  width: 100%;
 }
 
 nav {
   margin-top: 0.5em;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -204,7 +192,8 @@ nav>ul {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -230,39 +219,38 @@ nav>ul {
   padding: 0 0 10px;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   display: block;
-  padding: 10px 10px;
+  padding: 10px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #5CFFF4;
+  color: #5cfff4;
   text-decoration: none;
-  font-size: 95%
+  font-size: 95%;
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   /* visited link */
-  color: #5CFFF4;
+  color: #5cfff4;
 }
 
-nav>ul>li>a:hover,
-nav>ul>li>a:focus {
-  color: #FFFFFF;
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #fff;
   text-decoration: none;
 }
 
-nav>ul>li>a:active {
+nav > ul > li > a:active {
   /* selected link */
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .active {
-  color: #FFFFFF
+  color: #fff;
 }
 
 #about-hero {
   text-align: center;
-  /* Centers text */
 }
 
 #about-hero {
@@ -280,10 +268,10 @@ nav>ul>li>a:active {
 }
 
 #hero span {
-  font-size: 0.70em;
+  font-size: 0.7em;
   display: block;
   font-weight: 400;
-  margin-top: 1em
+  margin-top: 1em;
 }
 
 main {
@@ -302,19 +290,19 @@ footer {
   width: 48px;
 }
 
-.social>ul {
+.social > ul {
   list-style-type: none;
   text-align: center;
   padding: 0;
   display: inline-block;
-  width: 100%
+  width: 100%;
 }
 
-.social>ul>li {
+.social > ul > li {
   display: inline-block;
 }
 
-.social>ul>li>a {
+.social > ul > li > a {
   padding: 0 15px;
 }
 
@@ -332,6 +320,10 @@ iframe {
   max-height: 100%;
   height: auto;
   min-height: 625px;
+}
+
+.berlin-illustration svg {
+  max-width: 767px;
 }
 
 /* ==============================
@@ -367,7 +359,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px;
   }
 
   .row::after {
@@ -398,11 +390,11 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -446,12 +438,13 @@ Medium devices (640px and larger)
     position: relative;
   }
 
-  .topBotomBordersIn a:before, .topBotomBordersIn a:after {
+  .topBotomBordersIn a:before,
+  .topBotomBordersIn a:after {
     position: absolute;
     left: 0px;
     width: 100%;
     height: 2px;
-    background: #FFF;
+    background: #fff;
     content: "";
     opacity: 0;
     transition: all 0.3s;
@@ -467,7 +460,8 @@ Medium devices (640px and larger)
     transform: translateY(10px);
   }
 
-  .topBotomBordersIn a:hover:before, .topBotomBordersIn a:hover:after {
+  .topBotomBordersIn a:hover:before,
+  .topBotomBordersIn a:hover:after {
     opacity: 1;
     transform: translateY(0px);
   }
